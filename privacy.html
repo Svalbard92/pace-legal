@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pace — Privacy policy</title>
+<meta name="description" content="What Pace keeps, where, and why.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="brand"><a href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#15171b"/><g transform="translate(.64 .64) scale(.96)"><path d="M10.56 24.32V8h5.12a5.6 5.6 0 0 1 0 11.2h-5.12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.4" cy="24.32" r="2.18" fill="#2fbf7a"/></g></svg><span>Pace</span></a></header>
+  <h1>Privacy policy</h1>
+  <p class="meta">Effective 22 October 2026 · Pace for Android, by Wiseloop</p>
+
+  <p><strong>In short:</strong> everything you put into Pace — bills, cards, loans, spending, statements, files — stays on your phone. Pace's server knows your username and your plan, and nothing about your money. We do not sell data, show ads, or use analytics.</p>
+
+  <h2>1. Who we are</h2>
+  <p>Pace is made by <strong>Wiseloop</strong>, India ("we", "us"). For anything about this policy or your data, write to <a href="mailto:kpchetia@gmail.com">kpchetia@gmail.com</a>. That address is also our grievance contact under India's Digital Personal Data Protection Act, 2023.</p>
+
+  <h2>2. What stays on your phone</h2>
+  <p>Pace is built to work offline. These live only in Pace's private storage on your phone, protected by Android's app sandbox and your phone's encryption:</p>
+  <ul>
+    <li>Your bills, subscriptions and free trials, payments, cards, loans, money lent and borrowed, trips, vehicles, warranties, goals, income, savings and daily expenses.</li>
+    <li>Card statements (PDFs) and anything Pace reads from them; receipts, photos and files you attach.</li>
+    <li>Your profile (name, photo) and settings.</li>
+    <li>Card details you choose to save (full number, CVV, PIN) and statement-password details: in your phone's secure keystore, never in Pace's database or a backup, and shown only after your phone's screen lock.</li>
+  </ul>
+  <p>We cannot see, read or recover any of it. Android's own cloud backup and device-to-device transfer are turned off for Pace, so none of it is copied to Google Drive.</p>
+
+  <h2>3. What leaves your phone, and why</h2>
+  <table>
+    <tr><th>What</th><th>Where it goes</th><th>Why</th></tr>
+    <tr><td><strong>Your username</strong>, and a key derived from your password (never the password itself)</td><td>Pace's account server</td><td>Your account and plan. The server stores only a slow, salted hash of that key, so nobody — including us — can learn your password.</td></tr>
+    <tr><td>Your <strong>plan</strong> (trial or paid, until when); when the account was made and last signed in; the app version; sign-in sessions (stored as hashes)</td><td>Pace's account server</td><td>To know whether your plan is active and to keep you signed in.</td></tr>
+    <tr><td>A <strong>push token</strong> for your phone, while you are signed in</td><td>Pace's account server; Google Firebase Cloud Messaging delivers the message</td><td>To send you messages from Pace (news about your plan or the app). Reminders do not use it: they are set on the phone.</td></tr>
+    <tr><td>The app version, platform and Android version</td><td>Pace's server, when Pace checks for an update (at most every six hours)</td><td>To offer updates. Nothing about you is sent.</td></tr>
+    <tr><td>Nothing (a plain download)</td><td>Pace's server, for the card catalog</td><td>Public facts about credit cards: fees, rewards, benefits.</td></tr>
+    <tr><td><strong>Failure reports</strong>, only if you turn them on: the bank and card product, the problem, which checks failed, the statement's month, and version numbers</td><td>Pace's server</td><td>To fix statement reading. No name, number, amount or text from the statement.</td></tr>
+  </table>
+  <p>Pace's server keeps <strong>no IP address</strong> and writes no access log. Requests reach it through Cloudflare's network, which, like any network, handles your IP address to deliver them.</p>
+  <p>We collect no contacts, location, call logs, SMS, browsing history, advertising ID or device identifiers beyond the push token above.</p>
+
+  <h2>4. Gmail (optional)</h2>
+  <p>If you choose <strong>Connect Gmail</strong>, Pace asks Google for read-only access (<code>gmail.readonly</code>) to find your credit card statements:</p>
+  <ul>
+    <li>Pace searches your mailbox for statement emails from banks, downloads their PDF attachments, and reads them <strong>on your phone</strong>. It reads a statement email's text only to help open a password-protected PDF.</li>
+    <li>No email, attachment or anything read from them is sent to Pace's server or anyone else. Pace never sends, deletes, moves or marks mail.</li>
+    <li>You can stop it in Pace (Cards › Settings › Gmail › <strong>Stop reading it</strong>) or remove Pace's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+  <p>Pace's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We do not use Gmail data for advertising, do not sell it, do not let humans read it, and do not use it to train AI models.</p>
+
+  <h2>5. Your phone's permissions</h2>
+  <ul>
+    <li><strong>Camera</strong> — Scan &amp; pay reads a UPI QR code; photos you take are kept on the phone. No sound is recorded.</li>
+    <li><strong>Notifications</strong> — reminders and messages from Pace. Asked for from Settings, never at first launch.</li>
+    <li><strong>Biometrics / screen lock</strong> — to show a card's saved details. Pace never sees your fingerprint or face; Android checks it.</li>
+    <li><strong>Internet</strong>, and starting after a restart (so reminders survive it).</li>
+  </ul>
+
+  <h2>6. Payments</h2>
+  <p>Pace records money; it never moves it. Scan &amp; pay hands a UPI payment link to the UPI app you choose, which handles the payment; Pace sees only whether that app says it succeeded. Paid plans, when offered, are charged by Google Play; we receive only proof of purchase, never your card or bank details.</p>
+
+  <h2>7. Backups</h2>
+  <p>A backup is a file you make and keep wherever you choose. It is encrypted with your account password; we never receive it and cannot open it. It restores only on a phone signed in to the same account, with the password it was made with.</p>
+
+  <h2>8. Sharing</h2>
+  <p>We do not sell, rent or share personal data. The only services involved are those that run Pace: our rented server, Cloudflare (network delivery), Google Firebase Cloud Messaging (message delivery) and Google Play (installs, updates and purchases). We disclose data only if Indian law requires it, and we hold very little.</p>
+
+  <h2>9. How long we keep it</h2>
+  <ul>
+    <li>Your account (username, password hash, plan, push tokens): until you delete it.</li>
+    <li>Sign-in sessions: ended when you sign out, or after a year unused.</li>
+    <li>Snapshots of the account database, kept to undo administrative mistakes: the 60 most recent; an account deleted after a snapshot leaves it as newer ones replace it.</li>
+    <li>Failure reports: as long as they help fix statement reading. They identify no one, and we delete them when they no longer do.</li>
+  </ul>
+
+  <h2>10. Your rights and choices</h2>
+  <ul>
+    <li><strong>Delete your account</strong> at any time: in Pace (Settings › Account › Delete account), on the <a href="delete-account.html">web</a>, or by email. It erases your username, plan, sessions and push tokens from our server.</li>
+    <li><strong>Erase what is on your phone</strong>: uninstall Pace, or clear its data in Android's settings.</li>
+    <li><strong>Access or correct</strong> what our server holds about you: Settings › Account shows all of it (your username and plan); write to us for anything else.</li>
+    <li>Turn failure reports off, disconnect Gmail, or turn notifications off, at any time.</li>
+  </ul>
+
+  <h2>11. Security</h2>
+  <p>Traffic is encrypted (HTTPS). Passwords never leave the phone; the server keeps only hashes of keys and of sessions. Card details stay in the phone's secure keystore. No system is perfectly secure; if a breach affected your data, we would tell you and the authorities as Indian law requires.</p>
+
+  <h2>12. Children</h2>
+  <p>Pace is for adults (18+) managing their own money. It is not directed at children, and we do not knowingly hold a child's account; if you believe we do, write to us and we will delete it.</p>
+
+  <h2>13. Changes</h2>
+  <p>If this policy changes, we will update this page and its date, and tell you in the app if the change matters. Using Pace after that means you accept the new version.</p>
+
+  <footer>Wiseloop · <a href="mailto:kpchetia@gmail.com">kpchetia@gmail.com</a> · <a href="terms.html">Terms of use</a> · <a href="delete-account.html">Delete your account</a></footer>
+</main>
+</body>
+</html>

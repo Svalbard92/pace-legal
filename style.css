@@ -1,0 +1,34 @@
+/* Pace's public pages: the app's quiet look — one warm paper, ink, colour
+   only where it says something. */
+:root {
+  --paper: #f5f5f2; --card: #ffffff; --line: #e6e5e0;
+  --ink: #15171b; --ink2: #41444b; --ink3: #7b7e86; --dot: #2fbf7a; --late: #c53a30;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #111214; --card: #1a1b1f; --line: #2a2c31; --ink: #f1f1ee; --ink2: #c9cad0; --ink3: #93959c; --late: #f2766d; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink2); font: 16px/1.6 "Inter Tight", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 28px 16px 64px; }
+header.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+header.brand a { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; }
+header.brand svg { width: 40px; height: 40px; border-radius: 10px; flex: none; }
+header.brand span { font: 600 22px/1 "Source Serif 4", Georgia, serif; }
+h1 { color: var(--ink); font: 600 32px/1.2 "Source Serif 4", Georgia, serif; margin: 0 0 6px; }
+h2 { color: var(--ink); font: 600 21px/1.3 "Source Serif 4", Georgia, serif; margin: 36px 0 8px; }
+h3 { color: var(--ink); font-size: 16px; margin: 22px 0 4px; }
+p.meta { color: var(--ink3); font-size: 14px; margin: 0 0 24px; }
+a { color: var(--ink); text-underline-offset: 3px; }
+strong { color: var(--ink); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: block; overflow-x: auto; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { color: var(--ink); font-weight: 600; background: var(--paper); }
+tr:last-child td { border-bottom: 0; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 16px 0; }
+.links a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-weight: 600; }
+.links a:last-child { border-bottom: 0; }
+.links a small { display: block; color: var(--ink3); font-weight: 400; }
+footer { margin-top: 48px; color: var(--ink3); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
