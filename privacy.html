@@ -43,9 +43,10 @@
   <p>We collect no contacts, location, call logs, SMS, browsing history, advertising ID or device identifiers beyond the push token above.</p>
 
   <h2>4. Gmail (optional)</h2>
-  <p>If you choose <strong>Connect Gmail</strong>, Pace asks Google for read-only access (<code>gmail.readonly</code>) to find your credit card statements:</p>
+  <p>If you choose <strong>Connect Gmail</strong>, Pace asks Google for read-only access (<code>gmail.readonly</code>) for two things: your credit card statements, and autopay that failed. You can connect more than one Gmail account; each is read the same way.</p>
   <ul>
     <li>Pace searches your mailbox for statement emails from banks, downloads their PDF attachments, and reads them <strong>on your phone</strong>. It reads a statement email's text only to help open a password-protected PDF.</li>
+    <li>If you have bills, investments (SIP, RD), insurance premiums, loan EMIs or card bills on autopay, Pace also searches for emails saying an automatic payment failed (an auto-debit, NACH or e-mandate, standing instruction or ECS that bounced or was declined). It reads them <strong>on your phone</strong> to work out which of your autopays failed, and keeps only that match (which bill, which due date, the amount) and the email's ID so it is not read twice — not the email itself.</li>
     <li>No email, attachment or anything read from them is sent to Pace's server or anyone else. Pace never sends, deletes, moves or marks mail.</li>
     <li>You can stop it in Pace (Cards › Settings › Gmail › <strong>Stop reading it</strong>) or remove Pace's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
   </ul>
